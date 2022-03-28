@@ -2,6 +2,7 @@ package com.detroitlabs.dudewheresmycar.Controller;
 
 import com.detroitlabs.dudewheresmycar.model.Coordinates;
 import com.detroitlabs.dudewheresmycar.model.Map;
+import com.detroitlabs.dudewheresmycar.model.resourceSet;
 import com.detroitlabs.dudewheresmycar.service.MapService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -22,13 +23,17 @@ public class MapController {
     }//end displayMap
 
     //test way to get coordinates from JSON API
-    //@ResponseBody
+    @ResponseBody
     @RequestMapping("/coordinates")
     public String displayCoordinates() {
         Map test = myMap.fetchMyMap();
-        //Coordinates coordinates = test.getCoordinates().get(0);
-        System.out.println(test.getCoordinates());
-       return "abc";
+//        resourceSet resourceSet = new resourceSet();
+
+
+//        System.out.println(test.getCopyright());
+//       return "abc" + test.getCopyright();
+//       return " Estimated total should be 3:___ " + resourceSet.getEstimatedTotal();
+        return " Estimated total should be 3:___ " + test.getResourceSets().get(0).getEstimatedTotal();
         //return "Test message latitude" + coordinates.getLatitude() + "Longitude" + coordinates.getLongitude();
     }
 }

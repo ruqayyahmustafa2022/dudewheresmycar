@@ -2,26 +2,55 @@ package com.detroitlabs.dudewheresmycar.model;
 
 //import java.awt.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.List;
 
-public class Map {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Map { //going to be used as parent class for Json
 
-    List<Coordinates> coordinates;
-    private String mapSource;
+    String copyright;
+    List<resourceSet> resourceSets;
 
-    public String getMapSource() {
-        return mapSource;
+    public List<resourceSet> getResourceSets() {
+        return resourceSets;
     }
 
-    public void setMapSource(String mapSource) {
-        this.mapSource = mapSource;
+    public void setResourceSets(List<resourceSet> resourceSets) {
+        this.resourceSets = resourceSets;
     }
 
-    public List<Coordinates> getCoordinates() {
-        return coordinates;
+
+
+    public String getCopyright() {
+        return copyright;
     }
 
-    public void setCoordinates(List<Coordinates> coordinates) {
-        this.coordinates = coordinates;
+    public void setCopyright(String copyright) {
+        this.copyright = copyright;
     }
+
 }
+
+
+
+
+//    List<Coordinates> coordinates;
+//    private String mapSource;
+//
+//    public String getMapSource() {
+//        return mapSource;
+//    }
+//
+//    public void setMapSource(String mapSource) {
+//        this.mapSource = mapSource;
+//    }
+//
+//    public List<Coordinates> getCoordinates() {
+//        return coordinates;
+//    }
+//
+//    public void setCoordinates(List<Coordinates> coordinates) {
+//        this.coordinates = coordinates;
+//    }
+//}

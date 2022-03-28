@@ -2,6 +2,7 @@ package com.detroitlabs.dudewheresmycar.model;
 
 import java.util.ArrayList;
 
+
 public class VehicleOwner{
     String firstName;
     String lastName;
