@@ -1,12 +1,13 @@
 package com.detroitlabs.dudewheresmycar.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)   //tells jackson to map from response object to class any props that
 // we don't have values, ignore
 
-public class Location {
+public class Coordinates {
+
+
     private double latitude;
     private double longitude;
 

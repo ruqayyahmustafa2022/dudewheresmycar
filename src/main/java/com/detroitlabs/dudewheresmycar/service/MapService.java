@@ -11,7 +11,7 @@ public class MapService {
         RestTemplate restTemplate = new RestTemplate();
         //TODO: Change lat and long to a variable (look at sunnyday)
         return restTemplate.getForObject(
-                "https://api.tomtom.com/map/1/staticimage?key=cVFgm2yRLc7uuukgYE69GhBTMQ32mdTc&zoom=9&center=13.567893,46.112341&format=jpg&layer=basic&style=main&width=1305&height=748&view=Unified&language=en-GB",Map.class);
+                "http://dev.virtualearth.net/REST/v1/Locations?q=seattle&key=ApEA9xR5n09ZmerG_8I-6nU41Ar-q4zh4ZQb8YoYx-pGKcoPufhvPhELDOUDc_L4",Map.class);
 
     }
 }
