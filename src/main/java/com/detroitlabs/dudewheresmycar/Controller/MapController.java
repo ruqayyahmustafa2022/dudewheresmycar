@@ -23,18 +23,26 @@ public class MapController {
     }//end displayMap
 
     //test way to get coordinates from JSON API
-    @ResponseBody
     @RequestMapping("/coordinates")
-    public String displayCoordinates() {
+    public String displayCoordinates(ModelMap modelMap) {
         Map test = myMap.fetchMyMap();
+        String city = "City/State " + test.getResourceSets().get(0).getResources().get(0).getName();
+        String latitude = "Latitude " + test.getResourceSets().get(0).getResources().get(0).getPoint().getCoordinates().get(0);
+        String longitude = "Longitude " + test.getResourceSets().get(0).getResources().get(0).getPoint().getCoordinates().get(1);
+        modelMap.put("lat", latitude);
+        modelMap.put("long", longitude);
+        modelMap.put("city", city);
+
 //        resourceSet resourceSet = new resourceSet();
 
 
 //        System.out.println(test.getCopyright());
 //       return "abc" + test.getCopyright();
 //       return " Estimated total should be 3:___ " + resourceSet.getEstimatedTotal();
-        return " Estimated total should be 3:___ " + test.getResourceSets().get(0).getEstimatedTotal();
+        //return " Estimated total should be 3:___ " + test.getResourceSets().get(0).getResources().get(0).getName();
         //return "Test message latitude" + coordinates.getLatitude() + "Longitude" + coordinates.getLongitude();
+        return "coordinates";
+
     }
 }
 
