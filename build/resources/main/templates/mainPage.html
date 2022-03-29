@@ -100,6 +100,12 @@
       font-variant: normal;
       text-transform: none;
     }
+    .switch-label{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
   </style>
 </head>
 <body>
@@ -125,17 +131,19 @@
         width="530"
         class = "center"/>
 
-    <p>VIN #:XXXXXXXXX</p>
+    <p>VIN #:JACDJ58X527J08183</p>
     <p>MAKE: TESLA</p>
     <p>MODEL: MODEL X</p>
     <p>YEAR: 2022</p>
-    <p>STATUS: SECURE</p>
     <p>CURRENT LOCATION: LONG: 13.567893 LAT: 46.112341 at 4:35PM EST</p>
 
 
     <label class="switch">
+      <span class="toggle-switch-text toggle-switch-text-right">Secure</span>
       <input type="checkbox" checked>
       <span class="slider round"></span>
+      <span class="switch-label" data-on="Secure" data-off="Stolen"></span>
+      <span class="toggle-switch-text toggle-switch-text-right">Secure</span>
     </label>
 
   </div>

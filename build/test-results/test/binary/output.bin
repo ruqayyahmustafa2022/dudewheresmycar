@@ -1,0 +1,5 @@
+Õ13:06:20.569 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://dev.virtualearth.net/REST/v1/Locations?q=seattle&key=ApEA9xR5n09ZmerG_8I-6nU41Ar-q4zh4ZQb8YoYx-pGKcoPufhvPhELDOUDc_L4
+}13:06:20.627 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
+_13:06:20.836 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+†13:06:20.840 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [com.detroitlabs.dudewheresmycar.model.Map]
+Result Seattle, WA
