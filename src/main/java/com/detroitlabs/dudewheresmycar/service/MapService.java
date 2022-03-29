@@ -14,4 +14,17 @@ public class MapService {
                 "http://dev.virtualearth.net/REST/v1/Locations?q=seattle&key=ApEA9xR5n09ZmerG_8I-6nU41Ar-q4zh4ZQb8YoYx-pGKcoPufhvPhELDOUDc_L4",Map.class);
 
     }
-}
+
+//    public Map displayMap(double latitude, double longitude) {
+//        RestTemplate restTemplateMap = new RestTemplate();
+//
+//        return restTemplateMap.getForObject(
+//                "https://dev.virtualearth.net/REST/v1/Imagery/Map/Road/" +
+//                        latitude +"," +longitude +
+//                        "/18?mapSize=500,500&pp=" +
+//                        latitude +"," +longitude+
+//                        ";66&mapLayer=TrafficFlow&key=ApEA9xR5n09ZmerG_8I-6nU41Ar-q4zh4ZQb8YoYx-pGKcoPufhvPhELDOUDc_L4&zoomLevel=20&imagerySet=Road", Map.class)
+//        ;
+
+    }
+

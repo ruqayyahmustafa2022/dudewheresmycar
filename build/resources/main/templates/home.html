@@ -3,8 +3,13 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-        form {border: 3px solid #f1f1f1;}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
 
         input[type=text], input[type=password] {
             width: 50%;
@@ -54,13 +59,14 @@
             float: right;
             margin: 0 0;
         }
-        #logo  {
+
+        #logo {
             margin: 0 0;
 
 
         }
 
-        .logo-text{
+        .logo-text {
             padding-left: 20px;
             float: left;
         }
@@ -71,32 +77,40 @@
                 display: block;
                 float: none;
             }
+
             .cancelbtn {
                 width: 100%;
             }
+        }
+        .text {
+            padding-left: 100px;
         }
     </style>
 </head>
 <body>
 
 <h2>
-DUDE! WHERE'S MY CAR?!</h2>
+    DUDE! WHERE'S MY CAR?!</h2>
 
 
-<form action="/action_page.php" method="post">
+<form action="/mainPage" method="post">
     <div class="imgcontainer">
 
     </div>
 
     <div class="container">
 
+        <h1><em>THEY CAN RIDE BUT THEY CAN'T HIDE</em></h1>
+
         <label for="uname"><b>Username</b></label><br>
         <input type="text" placeholder="Enter Username" name="uname" required></br>
 
         <label for="psw"><b>Password</b></label></br>
         <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit">Login</button><br>
+        <a href="mainPage">
+            <button type="submit">Login</button>
+            <br>
+        </a>
         <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
@@ -109,7 +123,7 @@ DUDE! WHERE'S MY CAR?!</h2>
 
 
 </form>
-
+<img src="images/homePagePic.jpg" class="logo-text" height="200px" width="200px">
 
 </body>
 </html>
