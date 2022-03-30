@@ -7,9 +7,7 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class resourceSet {
     List<resource> resources;
-    int estimatedTotal;
-
-
+    int estimatedTotal; //will be used for unit testing
 
     public int getEstimatedTotal() {
         return estimatedTotal;
@@ -19,8 +17,6 @@ public class resourceSet {
         this.estimatedTotal = estimatedTotal;
     }
 
-
-
     public List<resource> getResources() {
         return resources;
     }
@@ -28,5 +24,4 @@ public class resourceSet {
     public void setResources(List<resource> resources) {
         this.resources = resources;
     }
-
 }

@@ -11,7 +11,8 @@ public class MapService {
         RestTemplate restTemplate = new RestTemplate();
         //TODO: Change lat and long to a variable (look at sunnyday)
         return restTemplate.getForObject(
-                "http://dev.virtualearth.net/REST/v1/Locations?q=seattle&key=ApEA9xR5n09ZmerG_8I-6nU41Ar-q4zh4ZQb8YoYx-pGKcoPufhvPhELDOUDc_L4",Map.class);
+                "http://dev.virtualearth.net/REST/v1/Locations?q=seattle&key=ApEA9xR5n09ZmerG_8I-6nU41Ar-q4zh4ZQb8Yo" +
+                        "Yx-pGKcoPufhvPhELDOUDc_L4",Map.class);
 
     }
 

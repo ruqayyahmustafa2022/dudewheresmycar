@@ -1,5 +1,8 @@
 package com.detroitlabs.dudewheresmycar.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class resource {
     String name;
     Point point;

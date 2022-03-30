@@ -9,7 +9,7 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Map { //going to be used as parent class for Json
 
-    String copyright;
+    String copyright; //will be used for testing
     List<resourceSet> resourceSets;
 
     public List<resourceSet> getResourceSets() {
@@ -19,8 +19,6 @@ public class Map { //going to be used as parent class for Json
     public void setResourceSets(List<resourceSet> resourceSets) {
         this.resourceSets = resourceSets;
     }
-
-
 
     public String getCopyright() {
         return copyright;
